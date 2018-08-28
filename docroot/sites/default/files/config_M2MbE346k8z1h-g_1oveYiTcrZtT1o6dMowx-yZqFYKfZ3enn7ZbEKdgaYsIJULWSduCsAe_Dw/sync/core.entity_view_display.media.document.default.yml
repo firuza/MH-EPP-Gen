@@ -1,0 +1,102 @@
+uuid: d3942edb-18b1-47cd-abb2-fbd59d40d28b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.document.field_dc_date
+    - field.field.media.document.field_dc_description
+    - field.field.media.document.field_dc_title
+    - field.field.media.document.field_document_path
+    - field.field.media.document.field_dummy_document
+    - media_entity.bundle.document
+  module:
+    - datetime
+    - field_group
+    - pdf
+third_party_settings:
+  field_group:
+    group_media_content:
+      children:
+        - field_dc_description
+        - field_dummy_document
+      parent_name: ''
+      weight: 2
+      label: 'Media Content'
+      format_type: html_element
+      format_settings:
+        label: 'Media Content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-8 media-content'
+    group_media_meta_data:
+      children:
+        - field_dc_date
+        - field_dc_title
+      parent_name: ''
+      weight: 1
+      label: 'media Meta Data'
+      format_type: html_element
+      format_settings:
+        label: 'media Meta Data'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-4 text-center entry-meta'
+_core:
+  default_config_hash: Cl6szq36rMNuC1Yy-YYm_rTNwItU-sG4adDbBk8fNn8
+id: media.document.default
+targetEntityType: media
+bundle: document
+mode: default
+content:
+  field_dc_date:
+    weight: 5
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_dc_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_dc_title:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_dummy_document:
+    weight: 4
+    label: hidden
+    settings:
+      keep_pdfjs: '1'
+      width: 100%
+      height: 800px
+    third_party_settings: {  }
+    type: pdf_default
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_document_path: true
+  thumbnail: true
+  uid: true

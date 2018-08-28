@@ -1,0 +1,14 @@
+uuid: 90fe679d-2636-4778-980b-92765b15ffaf
+name: 'Eminent Portal'
+mail: test@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

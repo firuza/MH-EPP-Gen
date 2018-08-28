@@ -1,0 +1,11 @@
+uuid: 8b60d5ff-badc-41ed-ba9a-aaca6717622c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2mJJ-nPzKCHcouU5J4JxlZWMGCJlbI9tjRm9uFefFNc
+name: 'Resource Category'
+vid: resource_category
+description: 'The resource category'
+hierarchy: 0
+weight: 0

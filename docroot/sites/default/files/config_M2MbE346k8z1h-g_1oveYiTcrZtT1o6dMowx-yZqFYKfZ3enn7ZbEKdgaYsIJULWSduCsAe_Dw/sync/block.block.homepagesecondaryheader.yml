@@ -1,0 +1,32 @@
+uuid: 994d973a-c38d-42bf-b27d-ec0b8f084165
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d923f682-d16d-40ca-bc35-35f94acd1862'
+  module:
+    - block_content
+    - facets
+  theme:
+    - eminent
+id: homepagesecondaryheader
+theme: eminent
+region: secondary_header
+weight: -6
+provider: null
+plugin: 'block_content:d923f682-d16d-40ca-bc35-35f94acd1862'
+settings:
+  id: 'block_content:d923f682-d16d-40ca-bc35-35f94acd1862'
+  label: 'Home Page Secondary Header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

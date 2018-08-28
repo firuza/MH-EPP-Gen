@@ -1,0 +1,37 @@
+uuid: d565b3bb-34d9-4100-8c30-6445ce00951c
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.exhibition
+  module:
+    - facets
+    - system
+    - views
+  theme:
+    - eminent_svp
+id: eminent_svp_views_block__exhibition_block_1
+theme: eminent_svp
+region: '-1'
+weight: 2
+provider: null
+plugin: 'views_block:exhibition-block_1'
+settings:
+  id: 'views_block:exhibition-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /exhibitions
+    negate: false
+    context_mapping: {  }
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,102 @@
+uuid: 244c9387-d395-4f57-8885-5a6ccb69ceaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_dc_date
+    - field.field.media.image.field_dc_description
+    - field.field.media.image.field_dc_title
+    - field.field.media.image.field_dummy_image
+    - field.field.media.image.field_image_path
+    - image.style.media_entity_browser_thumbnail
+    - media_entity.bundle.image
+  module:
+    - datetime
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_media_content:
+      children:
+        - field_dc_description
+        - field_dummy_image
+      parent_name: ''
+      weight: 8
+      label: 'Media Content'
+      format_type: html_element
+      format_settings:
+        label: 'Media Content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-8 media-content'
+    group_media_meta_data:
+      children:
+        - field_dc_date
+        - field_dc_title
+      parent_name: ''
+      weight: 4
+      label: 'media Meta Data'
+      format_type: html_element
+      format_settings:
+        label: 'media Meta Data'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-4 text-center entry-meta'
+_core:
+  default_config_hash: Wvd-Zagt76_qFG6IH5AeOQYQAMY6PVCcks5XTGr205I
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_dc_date:
+    weight: 6
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_dc_description:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_dc_title:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+    type: string
+  field_dummy_image:
+    weight: 10
+    label: hidden
+    settings:
+      image_style: media_entity_browser_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_image_path: true
+  thumbnail: true
+  uid: true

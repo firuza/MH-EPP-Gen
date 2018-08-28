@@ -1,0 +1,9 @@
+uuid: 67ce0684-f89d-4978-b8e5-82f5d3e75ac2
+langcode: en
+status: true
+dependencies: {  }
+id: curator
+label: curator
+weight: 3
+is_admin: null
+permissions: {  }

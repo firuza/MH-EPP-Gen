@@ -1,0 +1,220 @@
+uuid: 8b350ab5-6131-42d7-b1fb-ea70306bdafd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - field.storage.node.body
+    - field.storage.media.field_dc_date
+    - field.storage.media.field_dc_description
+    - field.storage.media.field_dc_title
+    - search_api.server.eminent
+  module:
+    - search_api
+    - search_api_attachments
+    - node
+    - media_entity
+id: eminent
+name: Eminent
+description: 'The eminent portal search index'
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  field_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_description
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  name:
+    label: 'Media name'
+    datasource_id: 'entity:media'
+    property_path: name
+    type: string
+  bundle:
+    label: Bundle
+    datasource_id: 'entity:media'
+    property_path: bundle
+    type: string
+  mid:
+    label: 'Media ID'
+    datasource_id: 'entity:media'
+    property_path: mid
+    type: integer
+  status:
+    label: 'Publishing status'
+    datasource_id: 'entity:media'
+    property_path: status
+    type: boolean
+  field_dc_date:
+    label: 'DC Date'
+    datasource_id: 'entity:media'
+    property_path: field_dc_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.media.field_dc_date
+  field_dc_description:
+    label: 'DC Description'
+    datasource_id: 'entity:media'
+    property_path: field_dc_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.media.field_dc_description
+  field_dc_title:
+    label: 'DC Title'
+    datasource_id: 'entity:media'
+    property_path: field_dc_title
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_dc_title
+  rendered_item:
+    label: 'Rendered HTML output'
+    datasource_id: null
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          play_list: default
+          quote: default
+          time_line_collection: default
+        'entity:media':
+          audio: default
+          document: default
+          image: default
+          video: default
+  saa_field_dummy_document:
+    label: 'Search api attachments: Dummy Document'
+    datasource_id: null
+    property_path: saa_field_dummy_document
+    type: text
+processor_settings:
+  ignorecase:
+    plugin_id: ignorecase
+    settings:
+      fields:
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+  node_status:
+    plugin_id: node_status
+    settings: {  }
+  transliteration:
+    plugin_id: transliteration
+    settings:
+      fields:
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings: {  }
+  html_filter:
+    plugin_id: html_filter
+    settings:
+      fields:
+        - rendered_item
+      title: true
+      alt: true
+      tags:
+        h1: 5
+        h2: 3
+        h3: 2
+        strong: 2
+        b: 2
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+  tokenizer:
+    plugin_id: tokenizer
+    settings:
+      fields:
+        - rendered_item
+      spaces: ''
+      overlap_cjk: 1
+      minimum_word_size: '3'
+      weights:
+        preprocess_index: -6
+        preprocess_query: -6
+  highlight:
+    plugin_id: highlight
+    settings:
+      highlight: always
+      excerpt: true
+      excerpt_length: 256
+      exclude_fields: {  }
+      prefix: '<strong>'
+      suffix: '</strong>'
+      weights:
+        postprocess_query: 0
+  rendered_item:
+    plugin_id: rendered_item
+    settings: {  }
+  add_url:
+    plugin_id: add_url
+    settings: {  }
+  file_attachments:
+    plugin_id: file_attachments
+    settings: {  }
+options:
+  index_directly: true
+  cron_limit: 50
+datasource_settings:
+  'entity:node':
+    plugin_id: 'entity:node'
+    settings:
+      bundles:
+        default: false
+        selected:
+          - play_list
+          - quote
+          - time_line_collection
+      languages:
+        default: false
+        selected:
+          - en
+  'entity:media':
+    plugin_id: 'entity:media'
+    settings:
+      bundles:
+        default: false
+        selected:
+          - audio
+          - document
+          - image
+          - video
+      languages:
+        default: false
+        selected:
+          - en
+tracker_settings:
+  default:
+    plugin_id: default
+    settings: {  }
+server: eminent

@@ -1,0 +1,24 @@
+uuid: 86d9bc00-2477-4172-bd2c-4ed497e42709
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.play_list
+_core:
+  default_config_hash: jCpykW8Gk41UelFZEnL3nbfScHWSTV56P4PFApvSOC4
+id: node.play_list.promote
+field_name: promote
+entity_type: node
+bundle: play_list
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

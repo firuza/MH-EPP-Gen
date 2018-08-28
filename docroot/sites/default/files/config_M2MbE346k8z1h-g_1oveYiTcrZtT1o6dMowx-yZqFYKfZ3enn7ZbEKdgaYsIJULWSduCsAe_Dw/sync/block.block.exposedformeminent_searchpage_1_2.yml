@@ -1,0 +1,30 @@
+uuid: 534ef507-dd90-4b06-804e-a69d1a6a1e24
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.eminent_search
+  module:
+    - facets
+    - views
+  theme:
+    - eminent_svp
+id: exposedformeminent_searchpage_1_2
+theme: eminent_svp
+region: '-1'
+weight: -7
+provider: null
+plugin: 'views_exposed_filter_block:eminent_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:eminent_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

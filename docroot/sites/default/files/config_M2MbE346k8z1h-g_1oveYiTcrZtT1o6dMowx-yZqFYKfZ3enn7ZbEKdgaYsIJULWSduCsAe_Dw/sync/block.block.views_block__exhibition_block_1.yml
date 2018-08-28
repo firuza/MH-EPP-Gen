@@ -1,0 +1,30 @@
+uuid: ad195de2-ae27-4936-b697-1d308a2efb40
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.exhibition
+  module:
+    - system
+    - views
+  theme:
+    - eminent
+id: views_block__exhibition_block_1
+theme: eminent
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:exhibition-block_1'
+settings:
+  id: 'views_block:exhibition-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

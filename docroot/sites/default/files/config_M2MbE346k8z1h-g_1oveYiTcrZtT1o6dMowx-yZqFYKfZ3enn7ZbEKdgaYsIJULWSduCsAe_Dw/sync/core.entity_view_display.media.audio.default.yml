@@ -1,0 +1,100 @@
+uuid: 7f2fa332-c725-4cc9-97c8-1783af9bcff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.audio.field_audio_path
+    - field.field.media.audio.field_dc_date
+    - field.field.media.audio.field_dc_description
+    - field.field.media.audio.field_dc_title
+    - field.field.media.audio.field_dummy_audio
+    - media_entity.bundle.audio
+  module:
+    - audiofield
+    - datetime
+    - field_group
+third_party_settings:
+  field_group:
+    group_media_content:
+      children:
+        - field_dc_description
+        - field_dummy_audio
+      parent_name: ''
+      weight: 2
+      label: 'Media Content'
+      format_type: html_element
+      format_settings:
+        label: 'Media Content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-8 media-content'
+    group_media_meta_data:
+      children:
+        - field_dc_date
+        - field_dc_title
+      parent_name: ''
+      weight: 1
+      label: 'media Meta Data'
+      format_type: html_element
+      format_settings:
+        label: 'media Meta Data'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-4 text-center entry-meta'
+_core:
+  default_config_hash: qIEqI60HrS7ZJq3wx0V9YTglNrtFWcXmBZm8eLWX9L4
+id: media.audio.default
+targetEntityType: media
+bundle: audio
+mode: default
+content:
+  field_dc_date:
+    weight: 3
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_dc_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_dc_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_dummy_audio:
+    weight: 4
+    label: hidden
+    settings:
+      audio_player: default_mp3_player
+    third_party_settings: {  }
+    type: audiofield_audioplayer
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_audio_path: true
+  thumbnail: true
+  uid: true

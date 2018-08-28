@@ -1,0 +1,32 @@
+uuid: 72038160-5e2a-467b-8da8-cd88a6293110
+langcode: en
+status: true
+dependencies:
+  module:
+    - facets
+    - system
+  theme:
+    - eminent_svp
+id: pagetitle_2
+theme: eminent_svp
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /exhibitions
+    negate: false
+    context_mapping: {  }

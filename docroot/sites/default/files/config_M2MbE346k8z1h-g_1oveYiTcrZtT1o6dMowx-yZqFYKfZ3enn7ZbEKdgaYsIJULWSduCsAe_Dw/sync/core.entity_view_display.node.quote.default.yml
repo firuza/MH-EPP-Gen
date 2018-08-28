@@ -1,0 +1,36 @@
+uuid: 329382eb-bb75-43a8-a273-a6db0c5921d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quote.body
+    - field.field.node.quote.field_quote_featured
+    - node.type.quote
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: jwL1sdpXqQWlQHUe-YOZt-m_GCXDuSzAKCzEPXq2cfo
+id: node.quote.default
+targetEntityType: node
+bundle: quote
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_quote_featured:
+    weight: 103
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  links:
+    weight: 100
+hidden: {  }

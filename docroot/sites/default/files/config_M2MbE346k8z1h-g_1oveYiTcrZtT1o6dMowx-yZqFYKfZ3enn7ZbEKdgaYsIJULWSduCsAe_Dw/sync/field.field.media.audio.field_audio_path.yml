@@ -1,0 +1,21 @@
+uuid: 361c7f71-da24-409b-9e69-7e8bcc5a869d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_audio_path
+    - media_entity.bundle.audio
+_core:
+  default_config_hash: vxdMiN4p95mCCTXp1vr4NZ2uLKfJzL_aa8hwMM-7nl8
+id: media.audio.field_audio_path
+field_name: field_audio_path
+entity_type: media
+bundle: audio
+label: 'Audio Path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

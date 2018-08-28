@@ -1,0 +1,20 @@
+uuid: 716d1ff8-9017-4f0e-a81c-69335ecc870b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eminent
+id: mainpagecontent
+theme: eminent
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

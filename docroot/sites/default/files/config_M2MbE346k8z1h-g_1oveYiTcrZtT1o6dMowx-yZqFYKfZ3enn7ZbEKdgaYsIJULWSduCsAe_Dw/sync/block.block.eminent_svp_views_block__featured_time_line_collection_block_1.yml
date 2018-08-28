@@ -1,0 +1,37 @@
+uuid: 2995c3de-fcfb-4591-ba16-5f55d5e22fba
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.featured_time_line_collection
+  module:
+    - facets
+    - system
+    - views
+  theme:
+    - eminent_svp
+id: eminent_svp_views_block__featured_time_line_collection_block_1
+theme: eminent_svp
+region: '-1'
+weight: -5
+provider: null
+plugin: 'views_block:featured_time_line_collection-block_1'
+settings:
+  id: 'views_block:featured_time_line_collection-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/time-lines"
+    negate: false
+    context_mapping: {  }
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

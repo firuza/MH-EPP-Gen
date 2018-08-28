@@ -1,0 +1,36 @@
+uuid: 9aba9274-867f-4139-bca3-05c1aeeb6cd8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - facets
+    - system
+  theme:
+    - eminent_svp
+id: eminent_svp_mainnavigation
+theme: eminent_svp
+region: '-1'
+weight: -2
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /curator/dashboard
+    negate: true
+    context_mapping: {  }

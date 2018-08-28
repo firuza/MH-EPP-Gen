@@ -1,0 +1,28 @@
+uuid: 89fb7a6b-51f2-497c-8ee6-c6b0ee5cfe12
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+  module:
+    - facets
+  theme:
+    - eminent
+id: contenttype
+theme: eminent
+region: content
+weight: -3
+provider: null
+plugin: 'facet_block:content_type'
+settings:
+  id: 'facet_block:content_type'
+  label: 'Content type'
+  provider: facets
+  label_display: visible
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

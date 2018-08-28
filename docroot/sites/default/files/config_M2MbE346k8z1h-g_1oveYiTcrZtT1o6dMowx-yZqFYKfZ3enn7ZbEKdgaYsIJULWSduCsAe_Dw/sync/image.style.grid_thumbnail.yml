@@ -1,0 +1,14 @@
+uuid: 621fc183-025f-49b0-bb10-a8a5feda7432
+langcode: en
+status: true
+dependencies: {  }
+name: grid_thumbnail
+label: 'Grid Thumbnail'
+effects:
+  2994ba6c-a11f-4b7d-aa11-2211ec4787ef:
+    uuid: 2994ba6c-a11f-4b7d-aa11-2211ec4787ef
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 550
+      height: 250

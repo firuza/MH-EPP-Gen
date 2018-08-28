@@ -1,0 +1,25 @@
+uuid: 0ce3766a-7ca8-4e8d-86bd-574a43aac299
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - media_entity
+_core:
+  default_config_hash: 7cMMPNKLx1WR8wyUX2XIoa7zZnN9QFOjV_xEQPkMw_I
+id: media.field_dummy_audio
+field_name: field_dummy_audio
+entity_type: media
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

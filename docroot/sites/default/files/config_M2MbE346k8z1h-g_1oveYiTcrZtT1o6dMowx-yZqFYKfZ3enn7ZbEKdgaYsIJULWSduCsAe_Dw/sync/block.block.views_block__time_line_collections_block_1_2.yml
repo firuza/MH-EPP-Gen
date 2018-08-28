@@ -1,0 +1,31 @@
+uuid: be06ad98-7652-4d5b-bdce-6ef0fe8ad1a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.time_line_collections
+  module:
+    - facets
+    - views
+  theme:
+    - eminent_svp
+id: views_block__time_line_collections_block_1_2
+theme: eminent_svp
+region: home_timelines
+weight: -9
+provider: null
+plugin: 'views_block:time_line_collections-block_1'
+settings:
+  id: 'views_block:time_line_collections-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

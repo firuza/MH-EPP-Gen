@@ -1,0 +1,42 @@
+uuid: 78b2c736-fe70-48c9-9406-cc5f2a2d914a
+langcode: en
+status: true
+dependencies:
+  module:
+    - eminent_admin
+    - facets
+    - system
+    - user
+  theme:
+    - eminent_svp
+id: addtotimeline
+theme: eminent_svp
+region: content
+weight: null
+provider: null
+plugin: add_to_timeline
+settings:
+  id: add_to_timeline
+  label: 'Add to timeline'
+  provider: eminent_admin
+  label_display: '0'
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/media/*'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      curator: curator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

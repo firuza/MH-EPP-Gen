@@ -1,0 +1,23 @@
+uuid: a1d26577-38c5-4b4f-bd5d-0f04b1200a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_time_line_date
+    - paragraphs.paragraphs_type.time_line_story
+  module:
+    - datetime
+_core:
+  default_config_hash: fvrEn9rxgQA3tppq73GQYIczq_6bBnklZuX_jD2Um-U
+id: paragraph.time_line_story.field_time_line_date
+field_name: field_time_line_date
+entity_type: paragraph
+bundle: time_line_story
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

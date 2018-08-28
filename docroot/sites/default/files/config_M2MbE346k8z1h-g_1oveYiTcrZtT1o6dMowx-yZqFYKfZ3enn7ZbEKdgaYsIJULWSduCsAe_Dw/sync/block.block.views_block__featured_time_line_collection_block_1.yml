@@ -1,0 +1,30 @@
+uuid: d517a36c-bf6c-4a29-8e98-c126c4c7a5a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_time_line_collection
+  module:
+    - system
+    - views
+  theme:
+    - eminent
+id: views_block__featured_time_line_collection_block_1
+theme: eminent
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:featured_time_line_collection-block_1'
+settings:
+  id: 'views_block:featured_time_line_collection-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

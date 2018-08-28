@@ -1,0 +1,14 @@
+uuid: 97412c86-534b-4818-9a4f-411f9afa00ed
+langcode: en
+status: true
+dependencies: {  }
+name: slick_thumbnail_image_style
+label: 'Slick Thumbnail Image Style'
+effects:
+  c677457b-0cf5-476e-a9e3-f3b519fe3dad:
+    uuid: c677457b-0cf5-476e-a9e3-f3b519fe3dad
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 220

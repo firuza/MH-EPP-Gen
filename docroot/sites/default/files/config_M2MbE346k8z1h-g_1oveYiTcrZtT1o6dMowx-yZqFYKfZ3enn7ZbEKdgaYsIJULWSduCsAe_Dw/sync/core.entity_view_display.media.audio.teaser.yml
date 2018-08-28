@@ -1,0 +1,122 @@
+uuid: ed90c04b-1524-46b8-bc6d-2bb7c6d9defa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.audio.field_audio_path
+    - field.field.media.audio.field_dc_date
+    - field.field.media.audio.field_dc_description
+    - field.field.media.audio.field_dc_title
+    - field.field.media.audio.field_dummy_audio
+    - image.style.thumbnail
+    - media_entity.bundle.audio
+  module:
+    - datetime
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_media_meta_data_teaser:
+      children:
+        - field_dc_date
+        - field_dc_title
+      parent_name: ''
+      weight: 0
+      label: 'media Meta Data'
+      format_type: html_element
+      format_settings:
+        label: 'media Meta Data'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'entry-meta entry-meta-search col-xs-12 col-sm-2 text-center'
+    group_media_content_teaser:
+      children:
+        - name
+        - field_dc_description
+      parent_name: ''
+      weight: 2
+      label: 'Media Content'
+      format_type: html_element
+      format_settings:
+        label: 'Media Content'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-8 media-content'
+    group_media_image_teaser:
+      children:
+        - thumbnail
+        - field_dummy_audio
+      parent_name: ''
+      weight: 1
+      label: 'Media Image'
+      format_type: html_element
+      format_settings:
+        label: 'Media Image'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: col-sm-2
+_core:
+  default_config_hash: qIEqI60HrS7ZJq3wx0V9YTglNrtFWcXmBZm8eLWX9L4
+id: media.audio.teaser
+targetEntityType: media
+bundle: audio
+mode: teaser
+content:
+  field_dc_date:
+    type: datetime_time_ago
+    weight: 6
+    label: above
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+  field_dc_description:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_dc_title:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  name:
+    type: string
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+  thumbnail:
+    type: image
+    weight: 6
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_audio_path: true
+  field_dummy_audio: true
+  uid: true

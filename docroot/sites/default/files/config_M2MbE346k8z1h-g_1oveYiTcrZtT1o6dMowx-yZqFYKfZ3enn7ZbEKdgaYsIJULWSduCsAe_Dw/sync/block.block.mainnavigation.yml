@@ -1,0 +1,36 @@
+uuid: 247896be-442a-4401-a5a2-7711a39680ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - facets
+    - system
+  theme:
+    - eminent
+id: mainnavigation
+theme: eminent
+region: top_header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /curator/dashoard
+    negate: true
+    context_mapping: {  }

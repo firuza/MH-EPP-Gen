@@ -1,0 +1,29 @@
+uuid: 2bc31603-7549-4fdb-9ef7-13f62b894990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_dummy_document
+    - media_entity.bundle.document
+  module:
+    - file
+_core:
+  default_config_hash: Mr8vwQHTzqQ0jmND2Vbffodqobx712eCqp9-3ThDF0Y
+id: media.document.field_dummy_document
+field_name: field_dummy_document
+entity_type: media
+bundle: document
+label: 'Dummy Document'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc png jpeg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

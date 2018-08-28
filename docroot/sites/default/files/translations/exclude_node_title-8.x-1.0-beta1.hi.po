@@ -1,0 +1,20 @@
+# Hindi translation of Exclude Node Title (8.x-1.0-beta1)
+# Copyright (c) 2016 by the Hindi translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Exclude Node Title (8.x-1.0-beta1)\n"
+"POT-Creation-Date: 2016-01-12 00:44+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Hindi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "enabled"
+msgstr "सक्रिय"
+msgid "None"
+msgstr "कोई नहीं"
+msgid "Other"
+msgstr "अन्य"

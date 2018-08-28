@@ -1,0 +1,23 @@
+uuid: 5783cd28-e278-4bac-892b-eedcfd46dea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.eminent_search
+  module:
+    - views
+  theme:
+    - eminent
+id: exposedformeminent_searchpage_1
+theme: eminent
+region: higlighted_header
+weight: -4
+provider: null
+plugin: 'views_exposed_filter_block:eminent_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:eminent_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }

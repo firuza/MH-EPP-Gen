@@ -1,0 +1,114 @@
+uuid: 5fceb80a-705a-4318-963b-9cd8ed136ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.play_list.field_description
+    - field.field.node.play_list.field_playlist_featured
+    - field.field.node.play_list.field_playlist_image
+    - field.field.node.play_list.field_resource
+    - node.type.play_list
+  module:
+    - slick_media
+    - text
+    - user
+_core:
+  default_config_hash: _hVRiNGzAkGhgD4EXjisBqyb3_wRL_HCmsKVq57U_nI
+id: node.play_list.default
+targetEntityType: node
+bundle: play_list
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_resource:
+    weight: 1
+    label: hidden
+    settings:
+      optionset: play_list_slick
+      optionset_thumbnail: play_list_nav
+      skin: default
+      skin_thumbnail: asnavfor
+      image_style: slick_main_image
+      thumbnail_style: slick_thumbnail_image_style
+      thumbnail_effect: grid
+      media_switch: ''
+      ratio: ''
+      view_mode: default
+      image: field_dummy_image
+      title: field_dc_title
+      link: ''
+      layout: ''
+      thumbnail_caption: field_dc_title
+      class: ''
+      caption:
+        field_dc_description: field_dc_description
+        field_dc_date: '0'
+        field_dc_title: '0'
+        field_dummy_image: '0'
+        field_image_path: '0'
+      cache: -1
+      sizes: ''
+      current_view_mode: default
+      vanilla: false
+      background: false
+      skin_arrows: ''
+      skin_dots: ''
+      responsive_image_style: ''
+      iframe_lazy: false
+      thumbnail: ''
+      overlay: ''
+      id: ''
+      breakpoints:
+        xs:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        sm:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        md:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        lg:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        xl:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      color_field: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+      preserve_keys: false
+      visible_items: 0
+      display: main
+      item_id: ''
+      box_style: ''
+      icon: false
+      dimension: ''
+    third_party_settings: {  }
+    type: slick_media
+hidden:
+  field_playlist_featured: true
+  field_playlist_image: true
+  links: true

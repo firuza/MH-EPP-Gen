@@ -1,0 +1,30 @@
+uuid: 7c03ba2c-0003-4b28-9e6f-fa149c1a5161
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.exhibition
+  module:
+    - system
+    - views
+  theme:
+    - eminent
+id: views_block__exhibition_block_2
+theme: eminent
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:exhibition-block_2'
+settings:
+  id: 'views_block:exhibition-block_2'
+  label: 'More Exhibitions'
+  provider: views
+  label_display: visible
+  views_label: 'More Exhibitions'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/exhibition/*\r\n<front>"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,36 @@
+uuid: 93a60218-776f-47b4-b29e-525e5a863468
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.curator-s-menu
+  module:
+    - facets
+    - system
+  theme:
+    - eminent
+id: curatorsmenu
+theme: eminent
+region: top_header
+weight: null
+provider: null
+plugin: 'system_menu_block:curator-s-menu'
+settings:
+  id: 'system_menu_block:curator-s-menu'
+  label: 'Curator''s Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /curator/dashoard
+    negate: false
+    context_mapping: {  }

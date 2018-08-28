@@ -1,0 +1,29 @@
+uuid: cede0378-933a-474c-8a74-17ef0d754f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_dummy_audio
+    - media_entity.bundle.audio
+  module:
+    - file
+_core:
+  default_config_hash: lBi2f4B9BQfxLxH2U1kv3rJQpmSajnLN4gIBjGhNBHE
+id: media.audio.field_dummy_audio
+field_name: field_dummy_audio
+entity_type: media
+bundle: audio
+label: 'Dummy Audio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 wav'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

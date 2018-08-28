@@ -1,0 +1,21 @@
+uuid: a3daabee-743a-4184-997f-718391062d06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_document_path
+    - media_entity.bundle.document
+_core:
+  default_config_hash: SYGvb-plcTQU_EmyQKEi15WMnh6zkMTjBaUoaT6VeAA
+id: media.document.field_document_path
+field_name: field_document_path
+entity_type: media
+bundle: document
+label: 'Document Path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

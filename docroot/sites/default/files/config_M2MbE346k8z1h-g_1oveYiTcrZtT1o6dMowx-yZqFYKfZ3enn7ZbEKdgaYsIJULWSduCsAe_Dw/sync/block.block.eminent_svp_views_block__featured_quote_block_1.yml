@@ -1,0 +1,37 @@
+uuid: 646af4e6-7744-4cd2-998e-8c95cd6244d8
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.featured_quote
+  module:
+    - facets
+    - system
+    - views
+  theme:
+    - eminent_svp
+id: eminent_svp_views_block__featured_quote_block_1
+theme: eminent_svp
+region: '-1'
+weight: -6
+provider: null
+plugin: 'views_block:featured_quote-block_1'
+settings:
+  id: 'views_block:featured_quote-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  other_facet:
+    id: other_facet
+    facets: ''
+    facet_value: ''
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

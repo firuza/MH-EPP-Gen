@@ -1,0 +1,8 @@
+uuid: c28a0c40-c67f-4f1e-a419-cd08dfb76d54
+langcode: en
+status: true
+dependencies: {  }
+id: curator-s-menu
+label: 'Curator''s Menu'
+description: 'Menu for curator''s dashboard'
+locked: false
